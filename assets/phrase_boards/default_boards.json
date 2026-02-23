@@ -1,0 +1,72 @@
+{
+  "boards": [
+    {
+      "id": "morning_routine",
+      "name": "Morning",
+      "contextTrigger": "morning",
+      "triggerTimeStart": "05:00",
+      "triggerTimeEnd": "10:00",
+      "icon": "wb_sunny",
+      "items": [
+        { "text": "Good morning", "icon": "sentiment_satisfied" },
+        { "text": "I slept well", "icon": "hotel" },
+        { "text": "I did not sleep well", "icon": "hotel" },
+        { "text": "I need breakfast", "icon": "restaurant" },
+        { "text": "I need my medication", "icon": "medication" },
+        { "text": "Please help me get up", "icon": "accessibility" },
+        { "text": "I need to use the bathroom", "icon": "wc" },
+        { "text": "I am comfortable", "icon": "check_circle" },
+        { "text": "Please open the curtains", "icon": "light_mode" }
+      ]
+    },
+    {
+      "id": "medical",
+      "name": "Medical",
+      "contextTrigger": "medical",
+      "icon": "medical_services",
+      "items": [
+        { "text": "I am in pain", "icon": "warning" },
+        { "text": "My pain level is 8 out of 10", "icon": "warning" },
+        { "text": "The pain is in my chest", "icon": "favorite" },
+        { "text": "I cannot breathe well", "icon": "air" },
+        { "text": "Please call the nurse", "icon": "call" },
+        { "text": "Please call the doctor", "icon": "local_hospital" },
+        { "text": "I need more pain medication", "icon": "medication" },
+        { "text": "I feel nauseous", "icon": "sick" },
+        { "text": "I feel better than yesterday", "icon": "trending_up" }
+      ]
+    },
+    {
+      "id": "emotional",
+      "name": "Feelings",
+      "contextTrigger": "always",
+      "icon": "favorite",
+      "items": [
+        { "text": "I love you", "icon": "favorite" },
+        { "text": "Thank you for everything", "icon": "gratitude" },
+        { "text": "I am happy today", "icon": "sentiment_very_satisfied" },
+        { "text": "I am worried", "icon": "sentiment_dissatisfied" },
+        { "text": "I miss you", "icon": "person" },
+        { "text": "I am proud of you", "icon": "star" },
+        { "text": "I need you here with me", "icon": "people" },
+        { "text": "Tell me about your day", "icon": "chat" }
+      ]
+    },
+    {
+      "id": "immediate_needs",
+      "name": "Needs",
+      "contextTrigger": "always",
+      "icon": "priority_high",
+      "items": [
+        { "text": "I need water", "icon": "water_drop" },
+        { "text": "I am too hot", "icon": "thermostat" },
+        { "text": "I am too cold", "icon": "ac_unit" },
+        { "text": "Please adjust my position", "icon": "accessibility_new" },
+        { "text": "Please turn on the TV", "icon": "tv" },
+        { "text": "Please turn off the lights", "icon": "light" },
+        { "text": "I want to listen to music", "icon": "music_note" },
+        { "text": "I need quiet please", "icon": "volume_off" }
+      ]
+    }
+  ]
+}

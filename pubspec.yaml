@@ -1,0 +1,146 @@
+name: echo_aac
+description: ECHO — Eye-gaze AAC communication app for locked-in patients
+publish_to: "none"
+version: 1.0.0+1
+
+environment:
+  sdk: ">=3.2.0 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+
+  # ═══════════════════════════════════════
+  # EYE TRACKING & FACE DETECTION
+  # ═══════════════════════════════════════
+  google_mlkit_face_detection: ^0.9.0
+  camera: ^0.10.5+9
+
+  # ═══════════════════════════════════════
+  # STATE MANAGEMENT
+  # ═══════════════════════════════════════
+  flutter_riverpod: ^2.4.9
+  riverpod_annotation: ^2.3.3
+  hooks_riverpod: ^2.4.9
+  flutter_hooks: ^0.20.4
+
+  # ═══════════════════════════════════════
+  # NAVIGATION
+  # ═══════════════════════════════════════
+  go_router: ^13.0.0
+
+  # ═══════════════════════════════════════
+  # AI & PREDICTION
+  # ═══════════════════════════════════════
+  http: ^1.2.0
+  dart_openai: ^4.1.0
+
+  # ═══════════════════════════════════════
+  # VOICE & TEXT-TO-SPEECH
+  # ═══════════════════════════════════════
+  flutter_tts: ^3.8.5
+  record: ^5.0.4
+  just_audio: ^0.9.36
+  audioplayers: ^5.2.1
+  path_provider: ^2.1.2
+
+  # ═══════════════════════════════════════
+  # BACKEND & DATABASE
+  # ═══════════════════════════════════════
+  supabase_flutter: ^2.3.4
+  hive_flutter: ^1.1.0
+  hive: ^2.2.3
+
+  # ═══════════════════════════════════════
+  # EMERGENCY FEATURES
+  # ═══════════════════════════════════════
+  telephony: ^0.2.0
+  geolocator: ^11.0.0
+  permission_handler: ^11.3.0
+
+  # ═══════════════════════════════════════
+  # AUTHENTICATION
+  # ═══════════════════════════════════════
+  local_auth: ^2.1.8
+  flutter_secure_storage: ^9.0.0
+
+  # ═══════════════════════════════════════
+  # UI & ANIMATIONS
+  # ═══════════════════════════════════════
+  flutter_animate: ^4.5.0
+  fl_chart: ^0.66.2
+  lottie: ^3.1.0
+  shimmer: ^3.0.0
+  google_fonts: ^6.1.0
+
+  # ═══════════════════════════════════════
+  # HAPTICS
+  # ═══════════════════════════════════════
+  vibration: ^1.8.4
+
+  # ═══════════════════════════════════════
+  # ENVIRONMENT & CONFIG
+  # ═══════════════════════════════════════
+  flutter_dotenv: ^5.1.0
+
+  # ═══════════════════════════════════════
+  # UTILITIES
+  # ═══════════════════════════════════════
+  uuid: ^4.3.3
+  intl: ^0.19.0
+  collection: ^1.18.0
+  rxdart: ^0.27.7
+  freezed_annotation: ^2.4.1
+  json_annotation: ^4.8.1
+  equatable: ^2.0.5
+  logger: ^2.1.0
+  connectivity_plus: ^6.0.2
+  device_info_plus: ^10.1.0
+  shared_preferences: ^2.2.2
+
+  # ═══════════════════════════════════════
+  # SMART HOME (ADVANCED)
+  # ═══════════════════════════════════════
+  flutter_blue_plus: ^1.31.8
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  integration_test:
+    sdk: flutter
+
+  build_runner: ^2.4.8
+  riverpod_generator: ^2.3.9
+  freezed: ^2.4.7
+  json_serializable: ^6.7.1
+  hive_generator: ^2.0.1
+
+  mocktail: ^1.0.3
+  fake_async: ^1.3.1
+
+  flutter_lints: ^3.0.0
+  very_good_analysis: ^6.0.0
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/images/
+    - assets/images/onboarding/
+    - assets/audio/
+    - assets/phrase_boards/
+    - .env
+
+  fonts:
+    - family: Inter
+      fonts:
+        - asset: assets/fonts/Inter-Regular.ttf
+          weight: 400
+        - asset: assets/fonts/Inter-Medium.ttf
+          weight: 500
+        - asset: assets/fonts/Inter-SemiBold.ttf
+          weight: 600
+        - asset: assets/fonts/Inter-Bold.ttf
+          weight: 700
